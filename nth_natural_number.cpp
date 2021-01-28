@@ -19,9 +19,10 @@ long long findnth(long long n){
             count++;
             //cout<<"Count: "<<count;
         }
-        if(isPresent(n+count)){
-            count++;
-        }
+    }
+    long long cnt = 0;
+    if(cnt){
+        count = findnth(n+count);
     }
     return n+count;
 }
